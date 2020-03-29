@@ -1,0 +1,208 @@
+#projects-section {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#projects-content {
+  width: 85%;
+  margin-top: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 5%;
+}
+
+.projects-card {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 1px;
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
+  background-color: white;
+  margin-bottom: 20px;
+  overflow: hidden;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.project-image {
+  width: 100%;
+  height: 60%;
+  background-position: center;
+  background-size: cover;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  margin: 5px 0 5px 5px;
+}
+
+.project-description {
+  margin-left: 5px;
+}
+
+.project-up {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  cursor: pointer;
+  background-image: url("images/ui.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 20px;
+  width: 20px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.project-up:hover {
+  -webkit-transform: rotate(180deg) scale(1.2);
+          transform: rotate(180deg) scale(1.2);
+}
+
+.project-window {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 1s all;
+  transition: 1s all;
+}
+
+.window-showing {
+  top: 0%;
+}
+
+.window-hidden {
+  top: 100%;
+}
+
+.title-2 {
+  font-size: 1.5rem;
+}
+
+.close-description {
+  width: 20px;
+  height: 20px;
+  background-image: url("images/close.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.close-description:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.project-title-2 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.project-description-2 {
+  width: 100%;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.project-buttons {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.project-button {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border: 0.5px solid black;
+  border-radius: 50%;
+  background-color: #00334e;
+  margin: 5px;
+  background-position: center;
+  background-size: contain;
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
+}
+
+.hover-online {
+  position: absolute;
+  width: 200%;
+  top: -60%;
+  left: -50%;
+  border: 1px solid black;
+  text-align: center;
+  background-color: white;
+  border-radius: 2px;
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.project-button:hover .hover-online {
+  opacity: 1;
+}
+
+.under-development {
+  position: absolute;
+  font-size: 3.5rem;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  text-align: center;
+  top: 10%;
+}
+/*# sourceMappingURL=Projects.css.map */

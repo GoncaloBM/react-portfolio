@@ -1,0 +1,105 @@
+#professional-section {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#professional-content {
+  width: 85%;
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#professional-card {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 1px;
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
+  background-color: white;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.job-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 100%;
+  height: 3rem;
+}
+
+.job-image {
+  width: 200px;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.job-name {
+  font-size: 2rem;
+  color: #7e776f;
+}
+
+.job-function {
+  font-size: 1.5rem;
+}
+
+.job-place {
+  width: 100%;
+  height: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #87c0cd;
+  margin: 0 auto;
+}
+
+.job-time {
+  margin-left: 1rem;
+}
+
+.job-separator {
+  height: 2rem;
+  width: 3px;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  background-color: #226597;
+}
+/*# sourceMappingURL=Professional.css.map */

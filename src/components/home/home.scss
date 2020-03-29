@@ -1,0 +1,32 @@
+$firstcolor : #113f67;
+$secondcolor : #226597;
+$thirdcolor : #87c0cd;
+$lastcolor : #f3f9fb;
+
+#home-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+  }
+  
+  #titles {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+  }
+  
+  #hello-title {
+    font-size: 2rem;
+    color: $firstcolor;
+  }
+  
+  #name-title {
+    font-size: 6rem;
+    color: $secondcolor;
+  }
+  
+  #quote-title {
+    font-size: 6rem;
+    color: $thirdcolor;
+  }

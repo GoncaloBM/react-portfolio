@@ -1,0 +1,533 @@
+$firstcolor : #113f67;
+$secondcolor : #226597;
+$thirdcolor : #87c0cd;
+$lastcolor : #f3f9fb;
+
+body {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  font-family: "Oswald", sans-serif;
+}
+
+hr {
+  border: 0;
+  clear: both;
+  display: block;
+  width: 96%;
+  color: black;
+  height: 2px;
+  background-color: #145374;
+}
+
+#nav {
+  width: 20%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  box-shadow: 5px 0px 10px 1px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+#navinfo {
+  width: 100%;
+  height: 40vh;
+  border-bottom: black solid 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#info-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-top: 20px;
+  background-image: url("Images/Cara-Cortado.png");
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
+}
+
+#info-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Oswald", sans-serif;
+}
+
+#name {
+  font-size: 3rem;
+}
+
+#function {
+  font-size: 1.5rem;
+}
+
+.navbutton {
+  position: relative;
+  width: 100%;
+  height: 10vh;
+  border-bottom: black solid 1px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.navbutton:hover {
+  background-color: #f9f6f7;
+  /* background-image: url("https://www.transparenttextures.com/patterns/first-aid-kit.png"); */
+}
+
+.button-icon {
+  height: 80%;
+}
+
+.button-ico {
+  width: 20%;
+  height: 80%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.nav-line {
+  position: absolute;
+  left: 0%;
+  bottom: -100%;
+  height: 100%;
+  width: 5px;
+  background-color: $firstcolor;
+  transition: 0.2s all;
+}
+
+.navbutton:hover .nav-line {
+  bottom: 0%;
+}
+
+#About-icon {
+  background-image: url("Images/About-me.png");
+}
+
+#Professional-icon {
+  background-image: url("Images/Professional.png");
+}
+
+#Education-icon {
+  background-image: url("Images/Education.png");
+}
+
+#Skills-icon {
+  background-image: url("Images/Skills.png");
+}
+
+#Projects-icon {
+  background-image: url("Images/Projects.png");
+}
+
+#Contact-icon {
+  background-image: url("Images/Contact.png");
+}
+
+.button-text {
+  font-family: "Oswald", sans-serif;
+}
+
+#screen {
+  position: absolute;
+  width: 80%;
+  left: 20%;
+  background-color: $lastcolor;
+  background-image: url("https://www.transparenttextures.com/patterns/first-aid-kit.png");
+}
+
+.section-title {
+  width: 100%;
+  height: 5rem;
+  background-color: $firstcolor;
+}
+
+.separator-text {
+  font-size: 3rem;
+  height: 100%;
+  margin-left: 5%;
+  color: #f9f6f7;
+}
+
+#education-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#education-content {
+  width: 85%;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 5%;
+}
+
+.education-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1px;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
+  background-color: white;
+  margin-bottom: 20px;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.education-school {
+  font-size: 2rem;
+  color: $firstcolor;
+  text-decoration: none;
+  transition: 0.2s all;
+}
+
+.education-school:hover {
+  border-bottom: 3px solid $firstcolor;
+}
+
+.education-title {
+  width: 100%;
+  color: $secondcolor;
+}
+
+#skills-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#skills-content {
+  width: 85%;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1px;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
+  background-color: white;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.skill-it {
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+
+.skills {
+  display: grid;
+  grid-gap: 2rem;
+  margin: 0 auto;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.it-skill {
+  width: 100px;
+  height: 200px;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.skill-image {
+  width: 100%;
+  height: 80vh;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#HTML-logo {
+  background-image: url("Images/HTML.png");
+}
+
+#CSS-logo {
+  background-image: url("Images/CSS.png");
+}
+
+#Javascript-logo {
+  background-image: url("Images/Javascript.png");
+}
+
+#Jquery-logo {
+  background-image: url("Images/JQuery.png");
+}
+
+#Bootstrap-logo {
+  background-image: url("Images/Bootstrap.png");
+}
+
+#SASS-logo {
+  background-image: url("Images/SASS.png");
+}
+
+#Mocha-logo {
+  background-image: url("Images/Mocha.png");
+}
+
+#Github-logo {
+  background-image: url("Images/Github.png");
+}
+
+#photoshop-logo {
+  background-image: url("Images/photoshop.png");
+}
+
+#excel-logo {
+  background-image: url("Images/excel.png");
+}
+
+#word-logo {
+  background-image: url("Images/word.png");
+}
+
+#powerpoint-logo {
+  background-image: url("Images/powerpoint.png");
+}
+
+#project-logo {
+  background-image: url("Images/Project.png");
+}
+
+#Mail-logo {
+  background-image: url("Images/Mail.png");
+}
+
+#Linkedin-logo {
+  background-image: url("Images/Linkedin.png");
+}
+
+.skill-name {
+  font-size: 1.5rem;
+}
+
+#projects-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#projects-content {
+  width: 85%;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 5%;
+}
+
+.projects-card {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1px;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
+  background-color: white;
+  margin-bottom: 20px;
+  overflow: hidden;
+  justify-content: space-between;
+}
+
+.project-image {
+  width: 100%;
+  height: 60%;
+  background-position: center;
+  background-size: cover;
+}
+
+#swiz-logo {
+  background-image: url("Images/swiz-logo.jpg");
+}
+
+#christmas-memory-logo {
+  background-image: url("Images/Christmas-Game.png");
+}
+
+#pokedex-logo {
+  background-image: url("Images/Pokedex.jpg");
+}
+
+.project-title {
+  font-size: 1.5rem;
+  margin: 5px 0 5px 5px;
+}
+
+.project-description {
+  margin-left: 5px;
+}
+
+.project-up {
+  align-self: center;
+  cursor: pointer;
+  background-image: url('Images/ui.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 20px;
+  width: 20px;
+  transform: rotate(180deg);
+  transition: 0.2s all;
+}
+
+.project-up:hover  {
+  transform: rotate(180deg) scale(1.2) ;
+}
+
+.project-window {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 100%;
+  transition: 1s all;
+}
+
+.title-2 {
+  font-size: 1.5rem;
+}
+
+.close-description {
+  width: 20px;
+  height: 20px;
+  background-image: url('Images/close.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: 0.2s all;
+}
+
+.close-description:hover {
+  transform: scale(1.2);
+}
+
+.project-title-2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.project-description-2 {
+  width: 100%;
+  align-self: flex-start;
+}
+
+.project-buttons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-button {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border: 0.5px solid black;
+  border-radius: 50%;
+  background-color: #00334e;
+  margin: 5px;
+  background-position: center;
+  background-size: contain;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
+}
+
+.hover-online {
+  position: absolute;
+  width: 200%;
+  top: -60%;
+  left: -50%;
+  border: 1px solid black;
+  text-align: center;
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: 0.2s all;
+}
+
+.project-button:hover .hover-online{
+  opacity: 1;
+}
+
+#online-button {
+  background-image: url('Images/deployment.png');
+}
+
+.under-development {
+  position: absolute;
+  font-size: 3.5rem;
+  transform-origin: center;
+  transform: rotate(-45deg);
+  text-align: center;
+  top: 10%;
+}
+
+#contacts-content {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.contact-image {
+  height: 90%;
+  width: 10%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
+}
+
+.contact-text {
+  text-decoration: none;
+  color: $firstcolor;
+  font-size: 1.2rem;
+  transition: 0.2s all;
+}
+
+.contact-text:hover {
+  border-bottom: 3px solid $firstcolor;
+}

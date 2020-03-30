@@ -1,0 +1,141 @@
+#nav {
+  width: 20%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  -webkit-box-shadow: 5px 0px 10px 1px rgba(0, 0, 0, 0.3);
+          box-shadow: 5px 0px 10px 1px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.nav-showing {
+  left: 0;
+}
+
+.nav-hidden {
+  left: -20%;
+}
+
+#navinfo {
+  width: 100%;
+  height: 40vh;
+  border-bottom: black solid 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navinfo-mobile {
+  display: none;
+}
+
+.navinfo-web {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#info-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-top: 20px;
+  background-image: url("images/Cara-Cortado.png");
+  background-position: center;
+  background-size: cover;
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
+}
+
+#info-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Oswald", sans-serif;
+}
+
+#name {
+  font-size: 3rem;
+}
+
+#function {
+  font-size: 1.5rem;
+}
+
+.navbutton {
+  position: relative;
+  width: 100%;
+  height: 10vh;
+  border-bottom: black solid 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  cursor: pointer;
+  overflow: hidden;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.navbutton:hover {
+  background-color: #f9f6f7;
+}
+
+.button-icon {
+  height: 80%;
+}
+
+.button-ico {
+  width: 20%;
+  height: 80%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.nav-line {
+  position: absolute;
+  left: 0%;
+  bottom: -100%;
+  height: 100%;
+  width: 5px;
+  background-color: #113f67;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.navbutton:hover .nav-line {
+  bottom: 0%;
+}
+
+.button-text {
+  font-family: "Oswald", sans-serif;
+}
+/*# sourceMappingURL=Navbar.css.map */

@@ -9,7 +9,7 @@ class Skills extends Component {
   }
   render() {
     return (
-      <div id="skills-section">
+      <div id="skills-section" ref={this.props.innerRef}>
         <div className="section-title">
           <div className="separator-text">Skills</div>
         </div>
@@ -23,4 +23,6 @@ class Skills extends Component {
   }
 }
 
-export default Skills;
+export default React.forwardRef((props, ref) => (
+  <Skills innerRef={ref} {...props} />
+));

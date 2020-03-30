@@ -56,7 +56,7 @@ class Education extends Component {
 
   render() {
     return (
-      <div id="education-section">
+      <div id="education-section" ref={this.props.innerRef}>
         <div className="section-title">
           <div className="separator-text">Education</div>
         </div>
@@ -77,4 +77,6 @@ class Education extends Component {
   }
 }
 
-export default Education;
+export default React.forwardRef((props, ref) => (
+  <Education innerRef={ref} {...props} />
+));

@@ -8,6 +8,8 @@ import professionalicon from "./images/Professional.png";
 import educationicon from "./images/Education.png";
 import skillsicon from "./images/Skills.png";
 import projectsicon from "./images/Projects.png";
+import classNames from "classnames";
+import "./Navbar.css";
 
 class Navbar extends Component {
   constructor(props) {
@@ -27,14 +29,25 @@ class Navbar extends Component {
   }
 
   render() {
+    let props = this.props;
+    let showingNav = classNames(
+      { "nav-showing": !props.isMobile },
+      { "nav-hidden": props.isMobile  }
+    );
     return (
-      <div id="nav">
-        <NavInfo name={this.state.name} function={this.state.function} />
+      <div id="nav" className={showingNav}>
+        <NavInfo
+          name={this.state.name}
+          function={this.state.function}
+          isMobile={props.isMobile}
+        />
         {this.state.buttons.map((button, index) => {
           return (
             <Navbutton
               text={this.state.buttons[index].name}
               image={this.state.buttons[index].image}
+              scroll={this.props.scrol}
+              index={index}
             />
           );
         })}

@@ -1,0 +1,30 @@
+.mobile-navbar {
+  position: relative;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 5px 0px 10px 1px rgba(0, 0, 0, 0.3);
+  background-color: white;
+}
+
+.showing {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+.burger-icon {
+  position: absolute;
+  left: 1%;
+}
+
+.burger-line {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}

@@ -3,7 +3,7 @@ import { Contact } from "./Contact";
 import githublogo from "../projects/images/Github.png";
 import maillogo from "./images/Mail.png";
 import linkedinlogo from "./images/Linkedin.png";
-import './Contacts.css'
+import "./Contacts.css";
 
 export const Contacts = React.forwardRef((props, ref) => {
   const [contacts, setContact] = useState([
@@ -28,6 +28,7 @@ export const Contacts = React.forwardRef((props, ref) => {
               link={contacts[index].link}
               image={contacts[index].image}
               name={contacts[index].name}
+              key={index}
             />
           );
         })}

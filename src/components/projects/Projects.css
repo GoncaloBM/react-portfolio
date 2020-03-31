@@ -205,4 +205,18 @@
   text-align: center;
   top: 10%;
 }
+
+@media screen and (max-width: 900px) {
+  #projects-content {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #projects-content {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
 /*# sourceMappingURL=Projects.css.map */

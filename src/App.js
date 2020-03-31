@@ -35,6 +35,7 @@ class App extends Component {
   };
 
   scrollToContent = a => {
+    this.hideNavbar();
     if (a === 0) {
       this.about.current.scrollIntoView({ behavior: "smooth" });
     } else if (a === 1) {
@@ -51,7 +52,11 @@ class App extends Component {
   };
 
   displayNavbar = () => {
-    this.setState({ navbarHidden: !this.state.navbarHidden });
+    this.setState({ navbarHidden: true });
+  };
+
+  hideNavbar = () => {
+    this.setState({ navbarHidden: false });
   };
 
   componentDidMount() {
@@ -69,8 +74,14 @@ class App extends Component {
           scrol={this.scrollToContent}
           isMobile={this.state.isMobile}
           navbarHidden={this.state.navbarHidden}
+          hideNavbar={this.hideNavbar}
         />
-        <div id="screen" className={mobileScreen}>
+        
+        <div
+          id="screen"
+          className={mobileScreen}
+          onClick={this.state.navbarHidden ? this.hideNavbar : null}
+        >
           <MobileNavbar
             isMobile={this.state.isMobile}
             displayNavbar={this.displayNavbar}

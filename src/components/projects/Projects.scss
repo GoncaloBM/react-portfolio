@@ -140,3 +140,15 @@
   text-align: center;
   top: 10%;
 }
+
+@media screen and (max-width:900px) {
+  #projects-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width:600px) {
+  #projects-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

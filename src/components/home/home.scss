@@ -30,3 +30,23 @@ $lastcolor : #f3f9fb;
     font-size: 6rem;
     color: $thirdcolor;
   }
+
+  @media screen and (max-width: 450px) {
+
+    #titles {
+      top: 15%;
+    }
+
+    #hello-title {
+      font-size: 1.5rem;
+    }
+    
+    #name-title {
+      font-size: 3rem;
+    }
+    
+    #quote-title {
+      font-size: 3rem;
+    }
+  }
+  

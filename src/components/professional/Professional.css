@@ -64,7 +64,7 @@
 .job-image {
   width: 200px;
   height: 100%;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -101,5 +101,62 @@
   margin-right: 1rem;
   margin-left: 1rem;
   background-color: #226597;
+}
+
+@media screen and (max-width: 1050px) {
+  .job-name {
+    font-size: 1.5rem;
+  }
+  .job-function {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .job-text {
+    height: 4rem;
+  }
+  .job-image {
+    width: 150px;
+  }
+  .job-name {
+    font-size: 1.5rem;
+  }
+  .job-function {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .job-text {
+    height: 4rem;
+  }
+  .job-image {
+    width: 100px;
+  }
+  .job-name {
+    font-size: 1.5rem;
+  }
+  .job-function {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .job-text {
+    height: 5rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .job-image {
+    width: 100px;
+  }
+  .job-name {
+    font-size: 1.2rem;
+  }
+  .job-function {
+    display: none;
+  }
 }
 /*# sourceMappingURL=Professional.css.map */

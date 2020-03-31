@@ -68,6 +68,7 @@ class Education extends Component {
                 title={this.state.education[index].title}
                 link={this.state.education[index].link}
                 topics={this.state.education[index].topics}
+                key={index}
               />
             );
           })}

@@ -54,6 +54,7 @@ class SkillCard extends Component {
                 <Skill
                   name={this.state.skills.coding[index].name}
                   logo={this.state.skills.coding[index].logo}
+                  key={index}
                 />
               );
             })}
@@ -64,6 +65,7 @@ class SkillCard extends Component {
                 <Skill
                   name={this.state.skills.other[index].name}
                   logo={this.state.skills.other[index].logo}
+                  key={index}
                 />
               );
             })}

@@ -2,9 +2,6 @@
   position: relative;
   width: 100%;
   height: 10vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -14,6 +11,7 @@
   -webkit-box-shadow: 5px 0px 10px 1px rgba(0, 0, 0, 0.3);
           box-shadow: 5px 0px 10px 1px rgba(0, 0, 0, 0.3);
   background-color: white;
+  z-index: 98;
 }
 
 .showing {
@@ -34,7 +32,29 @@
 .burger-line {
   width: 35px;
   height: 5px;
-  background-color: black;
+  background-color: #113f67;
   margin: 6px 0;
+}
+
+.names {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.name {
+  font-size: 1.5rem;
+  color: #226597;
+}
+
+.function {
+  color: #87c0cd;
 }
 /*# sourceMappingURL=MobileNavbar.css.map */

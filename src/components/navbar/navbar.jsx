@@ -30,12 +30,14 @@ class Navbar extends Component {
 
   render() {
     let props = this.props;
-    let showingNav = classNames(
-      { "nav-showing": !props.isMobile },
-      { "nav-hidden": props.isMobile  }
+    let nav = classNames(
+      { "nav-showing": !props.isMobile || props.navbarHidden },
+      { "nav-hidden": !props.navbarHidden && props.isMobile },
+      { "nav-mobile": props.isMobile },
+      { "nav-web": !props.isMobile }
     );
     return (
-      <div id="nav" className={showingNav}>
+      <div id="nav" className={nav}>
         <NavInfo
           name={this.state.name}
           function={this.state.function}
@@ -47,7 +49,9 @@ class Navbar extends Component {
               text={this.state.buttons[index].name}
               image={this.state.buttons[index].image}
               scroll={this.props.scrol}
+              hideNavbar={this.props.hideNavbar}
               index={index}
+              key={index}
             />
           );
         })}

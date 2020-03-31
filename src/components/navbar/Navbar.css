@@ -1,5 +1,4 @@
 #nav {
-  width: 20%;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11,7 +10,10 @@
   position: fixed;
   -webkit-box-shadow: 5px 0px 10px 1px rgba(0, 0, 0, 0.3);
           box-shadow: 5px 0px 10px 1px rgba(0, 0, 0, 0.3);
-  z-index: 1;
+  z-index: 99;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  background-color: white;
 }
 
 .nav-showing {
@@ -19,16 +21,21 @@
 }
 
 .nav-hidden {
-  left: -20%;
+  left: -40%;
+}
+
+.nav-mobile {
+  width: 40%;
+}
+
+.nav-web {
+  width: 20%;
 }
 
 #navinfo {
   width: 100%;
   height: 40vh;
   border-bottom: black solid 1px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -75,6 +82,7 @@
       -ms-flex-align: center;
           align-items: center;
   font-family: "Oswald", sans-serif;
+  margin-bottom: 15px;
 }
 
 #name {
@@ -137,5 +145,44 @@
 
 .button-text {
   font-family: "Oswald", sans-serif;
+}
+
+.name-info {
+  font-size: 3rem;
+  color: #226597;
+}
+
+.function-info {
+  font-size: 1.5rem;
+  color: #87c0cd;
+}
+
+@media screen and (max-width: 1250px) {
+  .name-info {
+    font-size: 2rem;
+    color: #226597;
+  }
+  .function-info {
+    font-size: 1.2rem;
+    color: #87c0cd;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .name-info {
+    font-size: 1.5rem;
+    color: #226597;
+  }
+  .function-info {
+    font-size: 1rem;
+    color: #87c0cd;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #info-photo {
+    width: 100px;
+    height: 100px;
+  }
 }
 /*# sourceMappingURL=Navbar.css.map */

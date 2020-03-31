@@ -67,6 +67,7 @@ class Projects extends Component {
                 technologies={this.state.projects[index].technologies}
                 link={this.state.link}
                 code={this.state.code}
+                key={index}
               />
             );
           })}

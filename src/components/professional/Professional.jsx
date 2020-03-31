@@ -1,8 +1,8 @@
-import React, {  useState } from "react";
+import React, { useState } from "react";
 import "./Professional.css";
 import "../../myCss.css";
 import { Job } from "./Job";
-import exidelogo from "./images/Exide.png";
+import exidelogo from "./images/Exide-2.png";
 import tecnotronicalogo from "./images/Tecnotronica.png";
 import cbilogo from "./images/ChassisBrakes.png";
 
@@ -132,6 +132,7 @@ export const Professional = React.forwardRef((props, ref) => {
               time={jobs[index].time}
               town={jobs[index].town}
               description={jobs[index].description}
+              key={index}
             />
           );
         })}

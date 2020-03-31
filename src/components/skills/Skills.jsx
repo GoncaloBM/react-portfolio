@@ -15,7 +15,7 @@ class Skills extends Component {
         </div>
         <div id="skills-content">
           {this.state.skillType.map((type, index) => {
-            return <SkillCard type={this.state.skillType[index]} />;
+            return <SkillCard type={this.state.skillType[index]} key={index} />;
           })}
         </div>
       </div>

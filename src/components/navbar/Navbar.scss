@@ -1,11 +1,17 @@
+$firstcolor : #113f67;
+$secondcolor : #226597;
+$thirdcolor : #87c0cd;
+$lastcolor : #f3f9fb;
+
 #nav {
-  width: 20%;
   height: 100vh;
   display: flex;
   flex-direction: column;
   position: fixed;
   box-shadow: 5px 0px 10px 1px rgba(0, 0, 0, 0.3);
-  z-index: 1;
+  z-index: 99;
+  transition: 0.5s all;
+  background-color: white;
 }
 
 .nav-showing {
@@ -13,24 +19,31 @@
 }
 
 .nav-hidden {
-  left: -20%;
+  left: -40%;
+}
+
+.nav-mobile {
+  width: 40%;
+}
+
+.nav-web {
+  width: 20%;
 }
 
 #navinfo {
   width: 100%;
   height: 40vh;
   border-bottom: black solid 1px;
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
 }
 
-.navinfo-mobile{
+.navinfo-mobile {
   display: none;
 }
 
-.navinfo-web{
+.navinfo-web {
   display: flex;
 }
 
@@ -49,6 +62,7 @@
   flex-direction: column;
   align-items: center;
   font-family: "Oswald", sans-serif;
+  margin-bottom: 15px;
 }
 #name {
   font-size: 3rem;
@@ -96,4 +110,43 @@
 
 .button-text {
   font-family: "Oswald", sans-serif;
+}
+
+.name-info {
+  font-size: 3rem;
+  color: $secondcolor;
+}
+
+.function-info {
+  font-size: 1.5rem;
+  color: $thirdcolor;
+}
+
+@media screen and (max-width:1250px) {
+  .name-info {
+    font-size: 2rem;
+    color: $secondcolor;
+  }
+  .function-info {
+    font-size: 1.2rem;
+    color: $thirdcolor;
+  }
+}
+
+@media screen and (max-width:950px) {
+  .name-info {
+    font-size: 1.5rem;
+    color: $secondcolor;
+  }
+  .function-info {
+    font-size: 1rem;
+    color: $thirdcolor;
+  }
+}
+
+@media screen and (max-width:750px) {
+  #info-photo {
+    width: 100px;
+    height: 100px;
+  }
 }

@@ -3,7 +3,10 @@ import "../../myCss.css";
 
 export const Navbutton = props => {
   return (
-    <div className="navbutton" onClick={() => props.scroll(props.index)}>
+    <div
+      className="navbutton"
+      onClick={(() => props.scroll(props.index))}
+    >
       <div className="nav-line" />
       <div
         className="button-ico"

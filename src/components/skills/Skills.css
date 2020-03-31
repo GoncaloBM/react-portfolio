@@ -90,4 +90,32 @@
 .skill-name {
   font-size: 1.5rem;
 }
+
+@media screen and (max-width: 1100px) {
+  .skills {
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .skills {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .skills {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .skills {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
 /*# sourceMappingURL=Skills.css.map */

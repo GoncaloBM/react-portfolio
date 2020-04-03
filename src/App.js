@@ -4,7 +4,7 @@ import Navbar from "./components/navbar/navbar";
 import { Home } from "./components/home/Home";
 import { About } from "./components/about/About";
 import { Professional } from "./components/professional/Professional";
-import Education from "./components/education/Education";
+import {Education} from "./components/education/Education";
 import Skills from "./components/skills/Skills";
 import Projects from "./components/projects/Projects";
 import { Contacts } from "./components/contact/Contacts";

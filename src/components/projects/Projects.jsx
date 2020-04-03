@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import swizlandlogo from "./images/swiz-logo.jpg";
 import memorygamelogo from "./images/Christmas-Game.png";
 import wwtbmlogo from "./images/wwtbm.png";
@@ -7,94 +7,93 @@ import githublink from "./images/Github.png";
 import Project from "./Project";
 import "./Projects.css";
 
-class Projects extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      projects: [
-        {
-          name: "Who Wants To Be A Millionaire",
-          logo: wwtbmlogo,
-          description: "Everyone's unmistakable game.",
-          technologies: this.technologiesWwtbm()
-        },
-        {
-          name: "Swizland Blog",
-          logo: swizlandlogo,
-          description:
-            "A blog about adventure, culture and relaxing in the beatufil country of Switzerland.",
-          technologies: this.technologiesSwizLand()
-        },
-        {
-          name: "Christmas Memory Game",
-          logo: memorygamelogo,
-          description: "A memory game with a Christmas theme.",
-          technologies: this.technologiesMemoryGame()
-        }
-      ],
-      link: onlinelink,
-      code: githublink
-    };
-  }
-
-  technologiesWwtbm = () => {
-    return (
+export const Projects = React.forwardRef((props, ref) => {
+  const technologiesWwtbm = (
+    <>
       <ul>
         <li>React.js</li>
         <li>JavaScript</li>
         <li>HTML</li>
         <li>SCSS</li>
       </ul>
-    );
-  };
+    </>
+  );
 
-  technologiesSwizLand = () => {
-    return (
+  const technologiesSwizLand = (
+    <>
       <ul>
         <li>HTML</li>
         <li>CSS</li>
         <li>Javascript</li>
         <li>Ajax</li>
       </ul>
-    );
-  };
+    </>
+  );
 
-  technologiesMemoryGame = () => {
-    return (
+  const technologiesMemoryGame = (
+    <>
+      {" "}
       <ul>
         <li>HTML</li>
         <li>CSS</li>
         <li>jQuery</li>
       </ul>
-    );
-  };
+    </>
+  );
 
-  render() {
-    return (
-      <div id="projects-section" ref={this.props.innerRef}>
-        <div className="section-title">
-          <div className="separator-text">Projects</div>
-        </div>
-        <div id="projects-content">
-          {this.state.projects.map((projects, index) => {
-            return (
-              <Project
-                name={this.state.projects[index].name}
-                logo={this.state.projects[index].logo}
-                description={this.state.projects[index].description}
-                technologies={this.state.projects[index].technologies}
-                link={this.state.link}
-                code={this.state.code}
-                key={index}
-              />
-            );
-          })}
-        </div>
+  const [projects, setProject] = useState([
+    {
+      name: "Who Wants To Be A Millionaire",
+      logo: wwtbmlogo,
+      description: "Everyone's unmistakable game.",
+      technologies: technologiesWwtbm,
+      codelink: "https://github.com/GoncaloBM/WWTBM",
+      onlinelink: "https://competent-archimedes-29ed49.netlify.com/"
+    },
+    {
+      name: "Swizland Blog",
+      logo: swizlandlogo,
+      description:
+        "A blog about adventure, culture and relaxing in the beatufil country of Switzerland.",
+      technologies: technologiesSwizLand,
+      codeLink: "https://github.com/GoncaloBM/swisscheeseblog",
+      onlinelink: "https://goncalobm.github.io/swisscheeseblog/"
+    },
+    {
+      name: "Christmas Memory Game",
+      logo: memorygamelogo,
+      description: "A memory game with a Christmas theme.",
+      technologies: technologiesMemoryGame,
+      codeLink: "https://github.com/GoncaloBM/Christma-Game",
+      onlinelink: "https://goncalobm.github.io/Christma-Game/"
+    }
+  ]);
+
+  const [link, setLink] = useState(onlinelink);
+  const [code, setCode] = useState(githublink);
+
+  return (
+    <div id="projects-section" ref={ref}>
+      <div className="section-title">
+        <div className="separator-text">Projects</div>
       </div>
-    );
-  }
-}
-
-export default React.forwardRef((props, ref) => (
-  <Projects innerRef={ref} {...props} />
-));
+      <div id="projects-content">
+        {projects.map((projectsUnit, index) => {
+          return (
+            <Project
+              name={projects[index].name}
+              logo={projects[index].logo}
+              description={projects[index].description}
+              technologies={projects[index].technologies}
+              onlineLink={projects[index].onlinelink}
+              codeLink={projects[index].codeLink}
+              link={link}
+              code={code}
+              key={index}
+            />
+          );
+        })}
+      </div>
+    </div>
+  );
+});

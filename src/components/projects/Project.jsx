@@ -41,12 +41,14 @@ class Project extends Component {
             <a
               className="project-button"
               style={{ backgroundImage: `url(${props.link})` }}
+              href={props.onlineLink}
             >
               <div className="hover-online">Online View</div>
             </a>
             <a
               className="project-button"
               style={{ backgroundImage: `url(${props.code})` }}
+              href={props.codeLink}
             >
               <div className="hover-online">View Code</div>
             </a>

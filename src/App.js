@@ -6,7 +6,7 @@ import { About } from "./components/about/About";
 import { Professional } from "./components/professional/Professional";
 import {Education} from "./components/education/Education";
 import Skills from "./components/skills/Skills";
-import Projects from "./components/projects/Projects";
+import {Projects} from "./components/projects/Projects";
 import { Contacts } from "./components/contact/Contacts";
 import { MobileNavbar } from "./components/mobilenavbar/MobileNavbar";
 import classNames from "classnames";

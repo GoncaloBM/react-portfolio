@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import swizlandlogo from "./images/swiz-logo.jpg";
 import memorygamelogo from "./images/Christmas-Game.png";
+import wwtbmlogo from "./images/wwtbm.png";
 import onlinelink from "./images/deployment.png";
 import githublink from "./images/Github.png";
 import Project from "./Project";
@@ -11,6 +12,12 @@ class Projects extends Component {
     super(props);
     this.state = {
       projects: [
+        {
+          name: "Who Wants To Be A Millionaire",
+          logo: wwtbmlogo,
+          description: "Everyone's unmistakable game.",
+          technologies: this.technologiesWwtbm()
+        },
         {
           name: "Swizland Blog",
           logo: swizlandlogo,
@@ -29,6 +36,17 @@ class Projects extends Component {
       code: githublink
     };
   }
+
+  technologiesWwtbm = () => {
+    return (
+      <ul>
+        <li>React.js</li>
+        <li>JavaScript</li>
+        <li>HTML</li>
+        <li>SCSS</li>
+      </ul>
+    );
+  };
 
   technologiesSwizLand = () => {
     return (

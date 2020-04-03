@@ -35,7 +35,7 @@ export const Professional = React.forwardRef((props, ref) => {
   const tecntrotonica = (
     <>
       <p>
-        On this actual time, it was given to me the experience, not only, on the
+        On this time, it was given to me the experience, not only, on the
         mechanical project, but also on the project management in a stamping
         tool company, being responsible on several tasks, such as:
       </p>
@@ -47,7 +47,7 @@ export const Professional = React.forwardRef((props, ref) => {
         </li>
         <li>
           On the production of the tools, I do the conception follow-up between
-          the operators on the workshop.
+          the operators on the workshop;
         </li>
         <li>
           Project manager since the beginning of the tool production until the
@@ -63,7 +63,7 @@ export const Professional = React.forwardRef((props, ref) => {
   const cbi = (
     <>
       <p>
-        On this period, I work on a success multinational company in the
+        On this period, I worked on a success multinational company in the
         automotive area, being responsible for:
       </p>
       <ul>
@@ -72,9 +72,9 @@ export const Professional = React.forwardRef((props, ref) => {
           internal plant projects;
         </li>
         <li>
-          Project Manager of a new product to the company which was awarded to
-          the company. To get that objective I was responsible for the
-          conception of an assembly line and all the processes on it;
+          Project Manager of a new product which was awarded to the company. To
+          get that objective I was responsible for the conception of an assembly
+          line and all the processes on it;
         </li>
         <li>
           With Lean tools and MTM analysis, I got the correct balance for the

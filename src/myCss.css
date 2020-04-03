@@ -4,6 +4,17 @@ body {
   display: flex;
   font-family: "Oswald", sans-serif;
 }
+
+@font-face {
+  font-family: "League";
+  src: local("League"), url(./fonts/LeagueSpartan-Bold.otf), format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"), url(./fonts/RobotoSlab-VariableFont_wght.ttf), format("truetype");
+}
+
 hr {
   border: 0;
   clear: both;
@@ -70,8 +81,9 @@ hr {
   height: 100%;
   margin-left: 5%;
   color: #f9f6f7;
+  font-family: League;
+  margin-top: 2px;
 }
-
 
 @media screen and (max-width: 720px) {
   .separator-text {

@@ -78,6 +78,10 @@
   font-size: 1.5rem;
 }
 
+.job-description {
+  padding: 5px;
+}
+
 .job-place {
   width: 100%;
   height: 2.5rem;

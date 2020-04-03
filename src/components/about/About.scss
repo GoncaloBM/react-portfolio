@@ -1,3 +1,32 @@
+$firstcolor: #113f67;
+$secondcolor: #226597;
+$thirdcolor: #87c0cd;
+$lastcolor: #f3f9fb;
+
 #about-section {
-    width: 100%;
-  }
+  width: 100%;
+}
+
+#about-content {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-description {
+  width: 85%;
+  border-radius: 1px;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
+  background-color: white;
+  margin-bottom: 20px;
+  overflow: hidden;
+  padding: 10px;
+}
+
+h2 {
+  font-family: League;
+  color: $secondcolor;
+}

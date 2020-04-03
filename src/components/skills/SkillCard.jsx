@@ -14,6 +14,7 @@ import powerpointlogo from "./images/powerpoint.png";
 import projectlogo from "./images/Project.png";
 import sasslogo from "./images/SASS.png";
 import wordlogo from "./images/word.png";
+import reactlogo from './images/1200px-React-icon.svg.png'
 
 class SkillCard extends Component {
   constructor(props) {
@@ -25,6 +26,7 @@ class SkillCard extends Component {
           { name: "HTML", logo: htmllogo },
           { name: "CSS", logo: csslogo },
           { name: "Javascript", logo: javascriptlogo },
+          { name: "React.js", logo: reactlogo },
           { name: "Jquery", logo: jquerylogo },
           { name: "Bootstrap", logo: bootstraplogo },
           { name: "SASS", logo: sasslogo },

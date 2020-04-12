@@ -4,10 +4,21 @@ import memorygamelogo from "./images/Christmas-Game.png";
 import wwtbmlogo from "./images/wwtbm.png";
 import onlinelink from "./images/deployment.png";
 import githublink from "./images/Github.png";
+import portfoliolink from "./images/portfolio.png";
 import Project from "./Project";
 import "./Projects.css";
 
 export const Projects = React.forwardRef((props, ref) => {
+  const technologiesPortfolio = (
+    <>
+      <ul>
+        <li>React Hooks</li>
+        <li>JavaScript</li>
+        <li>HTML</li>
+        <li>SCSS</li>
+      </ul>
+    </>
+  );
   const technologiesWwtbm = (
     <>
       <ul>
@@ -43,12 +54,20 @@ export const Projects = React.forwardRef((props, ref) => {
 
   const [projects, setProject] = useState([
     {
+      name: "Portfolio",
+      logo: portfoliolink,
+      description: "My Portfolio.",
+      technologies: technologiesPortfolio,
+      codelink: "https://github.com/GoncaloBM/react-portfolio",
+      onlinelink: "https://goncalobm.com",
+    },
+    {
       name: "Who Wants To Be A Millionaire",
       logo: wwtbmlogo,
       description: "Everyone's unmistakable game.",
       technologies: technologiesWwtbm,
       codelink: "https://github.com/GoncaloBM/WWTBM",
-      onlinelink: "https://competent-archimedes-29ed49.netlify.com/"
+      onlinelink: "https://competent-archimedes-29ed49.netlify.com/",
     },
     {
       name: "Swizland Blog",
@@ -57,7 +76,7 @@ export const Projects = React.forwardRef((props, ref) => {
         "A blog about adventure, culture and relaxing in the beatufil country of Switzerland.",
       technologies: technologiesSwizLand,
       codeLink: "https://github.com/GoncaloBM/swisscheeseblog",
-      onlinelink: "https://goncalobm.github.io/swisscheeseblog/"
+      onlinelink: "https://goncalobm.github.io/swisscheeseblog/",
     },
     {
       name: "Christmas Memory Game",
@@ -65,8 +84,8 @@ export const Projects = React.forwardRef((props, ref) => {
       description: "A memory game with a Christmas theme.",
       technologies: technologiesMemoryGame,
       codeLink: "https://github.com/GoncaloBM/Christma-Game",
-      onlinelink: "https://goncalobm.github.io/Christma-Game/"
-    }
+      onlinelink: "https://goncalobm.github.io/Christma-Game/",
+    },
   ]);
 
   const [link, setLink] = useState(onlinelink);

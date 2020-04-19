@@ -17,6 +17,7 @@ import wordlogo from "./images/word.png";
 import reactlogo from "./images/1200px-React-icon.svg.png";
 import nodelogo from "./images/1200px-Node.js_logo.svg.png";
 import mysqllogo from "./images/mysql-logo-png-transparent.png";
+import restlogo from "./images/restapi.png";
 
 class SkillCard extends Component {
   constructor(props) {
@@ -37,6 +38,7 @@ class SkillCard extends Component {
         backend: [
           { name: "NodeJs", logo: nodelogo },
           { name: "mySQL", logo: mysqllogo },
+          { name: "Rest-Api", logo: restlogo },
         ],
         other: [
           { name: "Github", logo: githublogo },

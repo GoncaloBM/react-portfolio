@@ -5,7 +5,9 @@ import SkillCard from "./SkillCard";
 class Skills extends Component {
   constructor(props) {
     super(props);
-    this.state = { skillType: ["Coding Skills", "Other Skills"] };
+    this.state = {
+      skillType: ["Frontend Skills", "Backend Skills", "Other Skills"],
+    };
   }
   render() {
     return (
